@@ -1,0 +1,14 @@
+prefix=/home/ldh/sdb1/code/ijkplayer/android/contrib/build/ffmpeg-x86/output
+exec_prefix=${prefix}
+libdir=/home/ldh/sdb1/code/ijkplayer/android/contrib/build/ffmpeg-x86/output/lib
+includedir=/home/ldh/sdb1/code/ijkplayer/android/contrib/build/ffmpeg-x86/output/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 57.83.100
+Requires: libavcodec >= 57.107.100, libavutil >= 55.78.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavformat -lm -lz -pthread -pthread
+Libs.private: 
+Cflags: -I${includedir}

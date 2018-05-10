@@ -1,0 +1,14 @@
+prefix=/home/ldh/sdb1/code/ijkplayer/android/contrib/build/ffmpeg-x86/output
+exec_prefix=${prefix}
+libdir=/home/ldh/sdb1/code/ijkplayer/android/contrib/build/ffmpeg-x86/output/lib
+includedir=/home/ldh/sdb1/code/ijkplayer/android/contrib/build/ffmpeg-x86/output/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 55.78.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -lm
+Libs.private: 
+Cflags: -I${includedir}
